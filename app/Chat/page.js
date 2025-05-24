@@ -50,7 +50,7 @@ const Page = () => {
                 </div>
 
                 <div className='fixed w-full md:w-[80%] justify-center bottom-0 bg-gray-400 rounded-2xl px-4 py-2.5 flex gap-2 items-center mx-auto'>
-                    <input value={mess} onChange={(e) => setMess(e.target.value)} type="text" placeholder='Type your message' className='bg-white text-2xl border-2 rounded-full px-1.5' />
+                    <input value={mess} onChange={(e) => setMess(e.target.value)} type="text" placeholder='Type your message' className='bg-white w-[225px] text-2xl border-2 rounded-full px-1.5' />
 
                     {!submiting?<button className='font-bold w-[50px] bg-red-600 text-white text-2xl flex justify-center items-center rounded-2xl cursor-pointer' onClick={()=> sendMessage({User: username, Message: mess})}>{">"}</button>
                     :<button className='font-bold w-[50px] bg-gray-600 text-white text-2xl flex justify-center items-center rounded-2xl'>{">"}</button>}
