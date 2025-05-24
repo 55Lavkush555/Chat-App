@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react'
 import MessageBar from '../components/MessageBar'
 
-const Page = () => {
+const page = () => {
     const [username, setUsername] = useState("")
     const [isLogin, setIsLogin] = useState(false)
     const [messages, setMessages] = useState([]);
@@ -61,4 +61,4 @@ const Page = () => {
     )
 }
 
-export default Page
+export default page
